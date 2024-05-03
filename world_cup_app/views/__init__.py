@@ -4,3 +4,6 @@ from .user_details import UserDetailsView
 from .users_list import NonStaffUserListView
 from .admins_list import StaffUserListView
 from .delete_admin import UserDeleteView
+from .add_news import NewsCreateView
+from .list_news import NewsListView
+from .delete_news import NewsDeleteView
