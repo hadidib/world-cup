@@ -2,7 +2,7 @@ from django.db import models
 
 class Team(models.Model):
     name = models.CharField(max_length=100)
-    logo_url = models.URLField(max_length=200)
+    logo = models.ImageField(upload_to='team_logos/', null=True, default=None, blank=True)  # Changed from logo_url to logo
     group_name = models.CharField(max_length=100)
     matches_played = models.IntegerField(default=0)
     points = models.IntegerField(default=0)

@@ -7,3 +7,5 @@ from .delete_admin import UserDeleteView
 from .add_news import NewsCreateView
 from .list_news import NewsListView
 from .delete_news import NewsDeleteView
+from .add_team import TeamCreateView
+from .list_teams import TeamListView

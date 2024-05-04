@@ -2,6 +2,7 @@ from django.urls import path
 from .views import SignupView, LoginView
 from .views import UserDetailsView, NonStaffUserListView, StaffUserListView, UserDeleteView
 from .views import NewsCreateView, NewsListView, NewsDeleteView
+from .views import TeamCreateView, TeamListView
 
 urlpatterns = [
     path('signup/', SignupView.as_view(), name='signup'),
@@ -13,4 +14,6 @@ urlpatterns = [
     path('news/create/', NewsCreateView.as_view(), name='create-news'),
     path('news/', NewsListView.as_view(), name='news-list'),
     path('news/<int:pk>/', NewsDeleteView.as_view(), name='delete-news'),
+    path('teams/', TeamCreateView.as_view(), name='create-team'),
+    path('teams/list/', TeamListView.as_view(), name='team-list'),
 ]
