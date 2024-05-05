@@ -9,3 +9,7 @@ from .list_news import NewsListView
 from .delete_news import NewsDeleteView
 from .add_team import TeamCreateView
 from .list_teams import TeamListView
+from .edit_teams import TeamDetailView
+from .add_stadiums import StadiumCreateView
+from .list_stadiums import StadiumListView
+from .edit_stadiums import StadiumDetailView

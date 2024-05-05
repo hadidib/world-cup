@@ -9,6 +9,7 @@ class Team(models.Model):
     wins = models.IntegerField(default=0)
     draws = models.IntegerField(default=0)
     losses = models.IntegerField(default=0)
+    is_deleted = models.BooleanField(default=False)  # New field to track soft deletion
 
     def __str__(self):
         return self.name

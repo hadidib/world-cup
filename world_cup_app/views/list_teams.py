@@ -3,5 +3,6 @@ from ..models import Team
 from ..serializers import TeamSerializer
 
 class TeamListView(generics.ListAPIView):
-    queryset = Team.objects.all()  # Fetches all team instances
-    serializer_class = TeamSerializer  # Uses your existing serializer to handle data
+    queryset = Team.objects.filter(is_deleted=False)  # Only include teams that are not marked as deleted
+    serializer_class = TeamSerializer
+
