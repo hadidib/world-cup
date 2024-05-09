@@ -10,6 +10,8 @@ class Match(models.Model):
     price1 = models.DecimalField(max_digits=7, decimal_places=2, default=0)  # Assuming prices are up to 99999.99
     price2 = models.DecimalField(max_digits=7, decimal_places=2, default=0)
     price3 = models.DecimalField(max_digits=7, decimal_places=2, default=0)
+    type = models.CharField(max_length= 255, default='Group Stage')
+    is_deleted = models.BooleanField(default=False)
 
     def __str__(self):
         return f"{self.team1.name} vs {self.team2.name} on {self.date.strftime('%Y-%m-%d')} at {self.stadium.name}"
