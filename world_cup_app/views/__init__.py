@@ -15,3 +15,6 @@ from .list_stadiums import StadiumListView
 from .edit_stadiums import StadiumDetailView
 from .create_match import MatchCreateView
 from .list_matches import MatchListView
+from .match_detail import MatchDetailView
+from .match_detail import MatchUpdateView
+from .match_detail import MatchDeleteView

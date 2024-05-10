@@ -21,7 +21,7 @@ class MatchSerializer(serializers.ModelSerializer):
         fields = [
             'id', 'team1', 'team2', 'date', 'stadium', 
             'team1_score', 'team2_score', 
-            'price1', 'price2', 'price3', 'type'
+            'price1', 'price2', 'price3', 'type', 'is_played'
         ]
 
     def validate(self, data):

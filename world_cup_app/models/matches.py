@@ -11,6 +11,7 @@ class Match(models.Model):
     price2 = models.DecimalField(max_digits=7, decimal_places=2, default=0)
     price3 = models.DecimalField(max_digits=7, decimal_places=2, default=0)
     type = models.CharField(max_length= 255, default='Group Stage')
+    is_played = models.BooleanField(default=False)
     is_deleted = models.BooleanField(default=False)
 
     def __str__(self):
