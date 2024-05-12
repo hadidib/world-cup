@@ -5,6 +5,7 @@ from .views import NewsCreateView, NewsListView, NewsDeleteView
 from .views import TeamCreateView, TeamListView, TeamDetailView
 from .views import StadiumCreateView, StadiumListView, StadiumDetailView
 from .views import MatchCreateView, MatchListView, MatchDetailView, MatchUpdateView, MatchDeleteView
+from .views import ReservationCreate
 
 urlpatterns = [
     path('signup/', SignupView.as_view(), name='signup'),
@@ -27,4 +28,5 @@ urlpatterns = [
     path('matches/<int:pk>/', MatchDetailView.as_view(), name='match-detail'),
     path('matches/<int:pk>/update/', MatchUpdateView.as_view(), name='match-update'),
     path('matches/<int:pk>/delete/', MatchDeleteView.as_view(), name='match-delete'),
+    path('reservations/', ReservationCreate.as_view(), name='create_reservation'),
 ]

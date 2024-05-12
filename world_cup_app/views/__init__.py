@@ -18,3 +18,4 @@ from .list_matches import MatchListView
 from .match_detail import MatchDetailView
 from .match_detail import MatchUpdateView
 from .match_detail import MatchDeleteView
+from .create_reservation import ReservationCreate

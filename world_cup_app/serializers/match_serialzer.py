@@ -9,7 +9,7 @@ class TeamSerializer(serializers.ModelSerializer):
 class StadiumSerializer(serializers.ModelSerializer):
     class Meta:
         model = Stadium
-        fields = ['id', 'name', 'location']  # Assuming these are the fields in your Stadium model
+        fields = ['id', 'name', 'location', 'seats']  # Assuming these are the fields in your Stadium model
 
 class MatchSerializer(serializers.ModelSerializer):
     team1 = TeamSerializer(read_only=True)
