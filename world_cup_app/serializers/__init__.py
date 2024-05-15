@@ -6,4 +6,4 @@ from .teams_serializer import TeamSerializer
 from .stadium_serialzer import StadiumSerializer
 from .match_serialzer import MatchSerializer
 # from .create_match_serialzer import MatchSerializer
-from .reservation_serialzer import ReservationSerializer
+from .reservation_serialzer import ReservationSerializer, ReservationsSerializer
