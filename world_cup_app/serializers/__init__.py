@@ -7,3 +7,4 @@ from .stadium_serialzer import StadiumSerializer
 from .match_serialzer import MatchSerializer
 # from .create_match_serialzer import MatchSerializer
 from .reservation_serialzer import ReservationSerializer, ReservationsSerializer
+from .reservation_list_serialzer import ReservationlistSerializer

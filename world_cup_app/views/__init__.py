@@ -21,3 +21,4 @@ from .match_detail import MatchDeleteView
 from .create_reservation import ReservationCreate
 from .reserved_seats import ReservedSeatsView
 from .reservations import UserReservationsView
+from .list_reservations import ReservationListView
