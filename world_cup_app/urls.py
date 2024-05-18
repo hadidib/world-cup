@@ -6,6 +6,7 @@ from .views import TeamCreateView, TeamListView, TeamDetailView
 from .views import StadiumCreateView, StadiumListView, StadiumDetailView
 from .views import MatchCreateView, MatchListView, MatchDetailView, MatchUpdateView, MatchDeleteView
 from .views import ReservationCreate, ReservedSeatsView, UserReservationsView, ReservationListView
+from .views import scorer_create_api, scorer_list, delete_scorer
 
 urlpatterns = [
     path('signup/', SignupView.as_view(), name='signup'),
@@ -32,4 +33,7 @@ urlpatterns = [
     path('reserved-seats/<int:match_id>/', ReservedSeatsView.as_view(), name='reserved-seats'),
     path('user-reservations/', UserReservationsView.as_view(), name='user-reservations'),
     path('reservationslist/', ReservationListView.as_view(), name='reservation-list'),
+    path('scorer/create/', scorer_create_api, name='scorer_create_api'),
+    path('scorers/list/', scorer_list, name='scorer_list'),
+    path('scorers/delete/<int:id>/', delete_scorer, name='delete_scorer'),
 ]

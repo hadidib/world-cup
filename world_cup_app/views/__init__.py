@@ -22,3 +22,6 @@ from .create_reservation import ReservationCreate
 from .reserved_seats import ReservedSeatsView
 from .reservations import UserReservationsView
 from .list_reservations import ReservationListView
+from .add_scorer import scorer_create_api
+from .list_scorers import scorer_list
+from .delete_scorer import delete_scorer
